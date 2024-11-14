@@ -1,10 +1,11 @@
-#Package Installation
-pip install torch torchvision 
-pip install scikit-learn
-pip install matplotlib
 
 # Simple MNIST Classifier with PyTorch
 
+
+## Package Installation
+- pip install torch torchvision 
+- pip install scikit-learn
+- pip install matplotlib
 
 ## Features
 - **MNIST Dataset**: Used for training and testing the model.
