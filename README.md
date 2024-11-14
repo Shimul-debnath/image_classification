@@ -1,23 +1,25 @@
-Install Necessary Library:
-
-pip install scikit-learn
-
-pip install tensorflow
-
-pip install matplotlib
+# Simple MNIST Classifier with PyTorch
 
 
-Data Preparation: The MNIST dataset is normalized by scaling pixel values to the range 0, 1
+## Features
+- **MNIST Dataset**: Used for training and testing the model.
+- **Model Architecture**: A simple feed-forward neural network with 2 hidden layers.
+- **Training**: The model is trained for 5 epochs using the Adam optimizer and Cross-Entropy loss.
+- **Evaluation**: The model's performance is evaluated based on accuracy and loss for both training and validation datasets.
+- **Metrics**: Training accuracy, validation accuracy, training loss, validation loss are plotted.
+- **Inference Time**: Measures the time taken to predict a batch of 100 samples.
+  
+## Requirements
+- Python 3.x
+- PyTorch
+- NumPy
+- Matplotlib
+- Scikit-learn
 
-Model Architecture:
-A Flatten layer converts each 28x28 image into a flat vector of 784 values.
-Two dense (fully connected) layers provide the model with 128 and 64 neurons respectively.
-A final dense layer with 10 neurons (one for each class) uses a softmax activation function to output probabilities.
 
-Model Compilation and Training: The model uses categorical_crossentropy loss and adam optimizer, with 5 epochs.
-
+## Results
+- The model’s accuracy is displayed after each epoch.
+- Training and validation metrics (accuracy & loss) are plotted and saved as `training_validation_plots.png`.
+- A classification report is generated showing precision, recall, and F1 scores.
 
 
-Input: MNIST dataset
-
-Output: Model Accuracy
