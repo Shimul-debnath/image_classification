@@ -1,3 +1,8 @@
+#Package Installation
+pip install torch torchvision 
+pip install scikit-learn
+pip install matplotlib
+
 # Simple MNIST Classifier with PyTorch
 
 
